@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .dropdownmenu ul, .dropdownmenu li {
+            margin: 0;
+            padding: 0;
+        }
+
+        .dropdownmenu ul {
+            background-color: black;
+            list-style: none;
+            
+        }
+
+        .dropdownmenu li {
+            float: left;
+            position: relative;
+            width: auto;
+        }
+
+        .dropdownmenu a {
+            display: block;
+            padding: 15px 40px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            color: gray;
+        }
+
+        .dropdownmenu li:hover {
+            background-color: #0f0d0d;
+            color: #fff;
+        }
+
+        .dropdownmenu ul#submenu {
+   
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #0b090cd3;
+           
+        }
+       
+        .dropdownmenu ul#submenu li:hover{
+            white-space: nowrap;
+            background-color: aqua;
+        }
+        .dropdownmenu ul#submenu li{
+            white-space: nowrap;
+            background-color: rgba(10, 9, 10, 0.377);
+            width: 100%;
+        }
+       
+        
+        .dropdownmenu li:hover ul#submenu {
+            display: block;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="dropdownmenu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a>
+                <ul id="submenu">
+                    <li><a href="#">Full Stack Development</a></li>
+                    <li><a href="#">Data Structures and Algorithms</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Placements</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
